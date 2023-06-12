@@ -14,11 +14,11 @@ RobotParams:
 #             all follows ROS convention (X-forward, Y-left, Z-Up).
 #-------------------------------------------------------------------------------
 SensorParams:
-  sensor_list:      ["VLP16"]
-  VLP16:
+  sensor_list:      ["RS16"]
+  RS16:
     type:           kLidar
     max_range:      20.0
-    center_offset:  [0.0, 0.0, 0.0]
+    center_offset:  [0.0, 0.0, 0.3]
     rotations:      [0.0, 0.0, 0.0]
     fov:            [rad(2.0*pi), rad(pi/6)]
     resolution:     [rad(5.0*pi/180), rad(5.0*pi/180)]
@@ -111,7 +111,7 @@ PlanningParams:
   type:             kAdaptiveExploration # Options: kBasicExploration, kAdaptiveExploration
   rr_mode:          kGraph
   bound_mode:       kExtremeBound
-  exp_sensor_list:  ["VLP16"]
+  exp_sensor_list:  ["RS16"]
   no_gain_zones_list: ["g1"]
   edge_length_min:  0.1
   edge_length_max:  3.0
