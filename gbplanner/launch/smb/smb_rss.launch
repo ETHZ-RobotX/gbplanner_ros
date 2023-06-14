@@ -6,7 +6,7 @@
   <arg name="odometry_topic" default="/tracking_camera/odom/sample"/>
   <arg name="odometry_frame" default="tracking_camera_odom"/>
   <arg name="lidar_topic" default="/rslidar/points"/>
-  <arg name="cmd_vel_topic" default="/control/joy_teleop/cmd_vel"/>
+  <arg name="cmd_vel_topic" default="/control/pure_pursuit/cmd_vel"/>
 
   <!-- Config files -->
   <arg name="gbplanner_config_file" default="$(find gbplanner)/config/$(arg robot_name)/gbplanner_config.yaml"/>
